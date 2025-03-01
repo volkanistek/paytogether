@@ -14,7 +14,7 @@ public class Activity {
     private Long id;
 
     private String title;
-    private String location;
+    private String description;
     
     @ManyToOne
     @JoinColumn(name = "user_id")

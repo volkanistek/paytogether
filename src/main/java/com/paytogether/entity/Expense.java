@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "expenses")
@@ -17,6 +19,7 @@ public class Expense {
 
     private String description;
     private BigDecimal amount;
+    private LocalDateTime expenseDate;
     
     @ManyToOne
     @JoinColumn(name = "user_id")
